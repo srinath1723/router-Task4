@@ -1,0 +1,51 @@
+
+.card {
+    max-width:320px;
+    height: 320px;
+    margin: 30px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: box-shadow 0.3s ease;
+    
+  }
+  
+  .card:hover {
+    animation: blink 0.2s linear 3;
+  }
+  
+  .card-image {
+    margin-top: 10px;
+    margin-left: 35px;
+    width: 80%;
+    height:50%;
+    
+  }
+  
+  .card-content {
+    padding: 15px;
+  }
+  
+  .card-content h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  .card-content p {
+    margin: 10px 0 0;
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  @keyframes blink {
+    0%, 100% {
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+    50% {
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    }
+  }
+  
